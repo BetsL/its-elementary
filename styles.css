@@ -1,0 +1,139 @@
+/* Set Up */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: "Schoolbell";
+    color: #FFF;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section  {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: #00008B;
+    height: 80px;
+}
+
+.menu p {
+    font-family: 'Open Sans';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.menu a  {
+    color: yellow;
+}
+
+.header {
+    background-color: #D3D3D3;
+    font-size: 72px;
+}
+
+.content  {
+    background-color: #0059B3;
+    height: 600px;
+}
+
+.content p  {
+    font-family: 'Open Sans';
+    font-size: 36px;
+}
+
+.sign-up  {
+    background-color: #004D99;
+}
+
+.sign-up p, a {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #FFF;
+
+}
+
+.feature-1  {
+    background-color: #006666;
+    font-size: 24px;
+}
+
+.feature-2  {
+    background-color: #003366;
+    font-size: 24px;
+}
+
+.feature-3  {
+    background-color: #000066;
+    font-size: 24px;
+}
+
+
+/* Mobile Styles */
+
+
+@media only screen and (max-width: 400px) {
+    body  {
+      background-color: #FFF;    /* White */
+    }
+    .header h1  {
+      font-size: 75%;
+    }
+}
+
+
+/* Tablet Styles */
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px)  {
+    .sign-up,
+    .feature-1,
+    .feature-2,
+    .feature-3  {
+        width: 50%;
+    }
+    .header h1  {
+      font-size: 90%;
+    }
+}
+
+
+/* Desktop Styles */
+
+
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .feature-1,
+    .feature-2,
+    .feature-3  {
+        width: 33.3%;
+    }
+    .header {
+        height: 400px;
+    }
+    .sign-up  {
+        height: 200px;
+        order: 1;
+    }
+    .content  {
+        order: 2;
+    }
+}
